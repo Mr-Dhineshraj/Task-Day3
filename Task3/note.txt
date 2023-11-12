@@ -1,0 +1,346 @@
+console.log("hello world");
+
+var a;
+var b;
+var c;
+var d;
+
+console.log(a,b,c,d);
+
+//QA2
+var myvar=1;
+
+console.log(myvar);
+//Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+var firstName="Dhienshraj";
+var lastName="B";
+var maritalStatus="single";
+var country="india";
+var age=27;
+
+//Declare variables to store your first name, last name, marital status, country and age in a single line
+
+var personalDetails=["Dhineshraj","B","single","india",27]
+
+//Declare variables and assign string, boolean, undefined and null data types
+
+var name="Dhinesh";
+var cond=true;
+var a;
+var b=null;
+
+
+//6. Convert the string to integer
+
+//parseInt()
+//Number()
+//Plus sign(+)
+
+var str="2345678";
+console.log(Number(str))
+console.log(parseInt(str));
+console.log(+str);
+
+//Write 6 statement which provide truthy & falsey values.
+
+
+//Task 2: Simple Programs todo for Operators
+
+//Square of a nuumber
+
+let num=10;
+let sqr = num*num;
+console.log (sqr);
+
+//Swapping 2 numbers
+var a=10;
+var b=20;
+console.log(a,b);
+var a=a+b;//30
+var b=a-b;//10
+var a=a-b//20
+console.log(a,b);
+
+//Addition of 3 numbers
+
+function add (a,b,c){
+
+    return a+b+c;
+}
+
+console.log(add(3,4,5));
+
+//Celsius to Fahrenheit conversion
+
+//(0°C × 9/5) + 32 = 32°F
+
+var c=10;
+
+var farenhit=(c * 9/5) + 32;
+
+console.log(farenhit);
+
+//Meter to miles
+var meter=10;
+
+var miles=meter/1609;
+
+console.log(miles);
+
+//Pounds to kg
+
+var pounds=3;
+
+var kg=pounds/2.205;
+
+console.log(kg);
+
+//Calculate Batting Average
+
+var batsmanRun=3000;
+var batsmanout=40;
+
+function avg (a,b){
+
+    return a/b;
+}
+
+console.log(avg(batsmanRun,batsmanout));
+
+//Calculate five test scores and print their average
+
+var testScores=[56,78,65,72,49];
+
+var total=0;
+
+for(var i=0;i<testScores.length;i++){
+
+    total= total+testScores[i];
+}
+console.log(total);
+
+var result=total/testScores.length;
+
+console.log(testScores.join(", "));
+console.log(result);
+//Power of any number x ^ y.
+
+var x=7;
+var y=4;
+
+var result=Math.pow(x,y);
+
+console.log(result);
+//Calculate Simple Interest
+
+//SI = P × R × T, where P = Principal, R = Rate of Interest, and T = Time period. 
+
+
+var P=1000;
+var R=10;
+var T=2;
+
+var si=P*R*T/100;
+
+console.log(si);
+
+//Calculate area of an equilateral triangle
+
+var a=10;
+var A=(Math.sqrt(3)/4)*Math.pow(a,2);
+
+console.log(A);
+
+//Area Of Isosceles Triangle
+/*let base=5;
+let height=4;
+
+let res=(base*height)/2;
+
+console.log(res);*/
+
+function areaOfIsosceles(base,side){
+
+var height =Math.sqrt(side*side-(base*base/4));
+var area = (base*height)/2;
+
+return area;
+}
+
+var baseLength=10;
+var sideLength=8;
+
+var triangleArea=areaOfIsosceles(baseLength,sideLength);
+console.log(triangleArea);
+
+//Volume Of Sphere
+
+function volumeOfSphere(radius){
+
+    var testRadius=(4/3)*3.14*(radius*radius*radius);
+
+    return testRadius;
+
+}
+var getRadius=10;
+
+var sphere=volumeOfSphere(getRadius);
+console.log(sphere.toFixed(2));
+
+//Volume Of Prism
+//triangle prism formula is v=bh(b represent base of area and h represent height og triangle)
+function volumeOfPrism(length,width,height){
+
+    var triangleArea=length*width;
+    var v=triangleArea*height;
+    return v;
+
+}
+var prismLength=6;
+var prismWidth=3
+var prismHeight=10;
+var getPrism=volumeOfPrism(prismLength,prismWidth,prismHeight);
+
+console.log(getPrism);
+
+
+// Area of triangle;
+
+function areaOfTriangle(l,b){
+
+var triangleArea=1/2*l*b;
+return triangleArea;
+}
+
+var length=10;
+var breath=8;
+
+var getArea=areaOfTriangle(length,breath);
+console.log(getArea);
+//Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+function discount(actual,sold){
+
+    var amntofDiscount=actual-sold;
+    return amntofDiscount;
+
+}
+
+var actualAmount=136;
+var soldAmount=80;
+
+var validDiscount=discount(actualAmount,soldAmount);
+
+console.log(validDiscount);
+
+//Given their radius of a circle and find its diameter, circumference and area.
+
+function diameter(r){
+
+    let diameterValue=2*r;
+
+    return diameterValue;
+
+}
+
+function circumference (r){
+
+    let c=2*Math.PI*r;
+
+    return c;
+}
+
+function areaOfCircle(r){
+
+    let circleArea=Math.PI*Math.pow(r,2);
+    return circleArea;
+
+}
+
+console.log(`Diameter of circle is ${diameter(5)}
+circumference of circle is ${circumference(5).toFixed(2)}
+area of circle is ${areaOfCircle(5).toFixed(2)}`);
+
+//Given two numbers and perform all arithmetic operations.
+
+var num1=26;
+var num2=32;
+
+function addition(num1,num2){
+    var add=num1+num2;
+    return add;
+}
+function subtraction(num1,num2){
+    var sub=num1-num2;
+    return sub;
+}
+function multiple (num1,num2){
+    var mul=num1*num2;
+    return mul;
+}
+function division(num1,num2){
+    var div=num1/num2;
+    return div;
+}
+function modulo(num1,num2){
+
+    var mod=num1%num2;
+    return mod;
+}
+function exponen(num1,num2){
+    var expo=num1**num2;
+    return expo;
+}
+
+console.log(`${addition(num1,num2)} 
+${subtraction(num1,num2)}
+${multiple(num1,num2)}
+${division(num1,num2)}
+${modulo(num1,num2)}
+${exponen(num1,num2)}`);
+
+/*Display the asterisk pattern as shown below(No loop needed):
+*****
+*****
+*****
+*****
+*****  
+*/
+
+var aster="*****";
+
+console.log(`${aster}
+${aster}
+${aster}
+${aster}
+${aster}`);
+
+/*Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month.
+ Calculate the total energy bill of that consumer if per unit rate is 10?*/
+//Kilowatt-hours = (watts) x (usage) / 1000.
+//Cost = (kilowatt-hours) x (electricity rate)
+
+ function billOfElectricity(watts,hours,month,rate)
+ {
+    var kilowatt=(watts)*(hours)*(month)/1000;
+
+    var cost=(kilowatt)*(rate);
+    return cost;
+ }
+
+ var usedWatts=100;
+ var perDayHours=24;
+ var perMonthDays=30;
+ var rateofcurrent=10;
+
+ var currentBill=billOfElectricity(usedWatts,perDayHours,perMonthDays,rateofcurrent);
+
+ console.log(currentBill);
+
+ //Program To Calculate CGPA
+
+
+ var subjects=[97,68,93,38,29];
+ 
