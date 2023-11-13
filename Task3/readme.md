@@ -1,1 +1,0 @@
-This is the day 3 task about compare two json obj and getting the data from api.
